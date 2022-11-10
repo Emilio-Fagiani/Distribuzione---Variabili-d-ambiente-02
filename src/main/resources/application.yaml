@@ -1,0 +1,20 @@
+spring:
+  environment: default
+server:
+  port: 5000
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+welcomeMsg: Hello from prod
+server:
+  port: 5000
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+welcomeMsg: Hello from test
+server:
+  port: 4000
